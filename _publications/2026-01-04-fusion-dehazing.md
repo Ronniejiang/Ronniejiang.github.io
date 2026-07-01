@@ -6,7 +6,7 @@ research_area: image_generation
 display_order: 104
 permalink: /publication/fusion-meets-dehazing
 date: 2026-01-04
-venue: "IEEE Transactions on Image Processing"
+venue: "TIP"
 neutral_label: "Under Review"
 status: "Under Review"
 authors: "Jing Li, Jiafeng Yan, <strong>Chengjie Jiang</strong>, Bin Yang, Yu Liu†"

@@ -18,11 +18,13 @@
     {% endif %}
 
     <div class="publication-card__meta">
-      {% if pub.venue_label %}
-        <span class="publication-card__venue">{{ pub.venue_label }}</span>
-      {% elsif pub.venue %}
-        <span class="publication-card__venue">{{ pub.venue }}</span>
-      {% endif %}
+      {% unless pub.hide_venue_badge %}
+        {% if pub.venue_label %}
+          <span class="publication-card__venue">{{ pub.venue_label }}</span>
+        {% elsif pub.venue %}
+          <span class="publication-card__venue">{{ pub.venue }}</span>
+        {% endif %}
+      {% endunless %}
       {% if pub.highlight_label %}
         <span class="publication-card__highlight">{{ pub.highlight_label }}</span>
       {% endif %}

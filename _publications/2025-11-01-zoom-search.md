@@ -7,7 +7,7 @@ display_order: 202
 permalink: /publication/zoom-search
 date: 2025-11-01
 venue: "arXiv"
-venue_label: "AAAI 2027 Under Review"
+venue_label: "Arxiv 2025"
 status: "Under Review"
 authors: "Yunqi Zhou*, <strong>Chengjie Jiang*</strong>, Chun Yuan, Jing Li†"
 paperurl: "https://arxiv.org/abs/2511.20460"
