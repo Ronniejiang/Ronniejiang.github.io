@@ -36,7 +36,7 @@ author:
   academia         : # URL
   arxiv            : # URL - Update with the correct link to your profile
   googlescholar    : "https://scholar.google.com/citations?user=NGizEIYAAAAJ&hl=zh-CN"
-  googlescholar_badge : "https://img.shields.io/endpoint?url=https%3A%2F%2Fgoogle-scholar-badge.vercel.app%2Fcitations%3Fuser%3DNGizEIYAAAAJ&style=social"
+  googlescholar_badge :
   inspire-hep      : # URL
   impactstory      : # URL
   orcid            : # URL

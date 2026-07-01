@@ -7,28 +7,35 @@ author_profile: true
 
 {% include base_path %}
 
-You can also find my articles on [Google Scholar](https://scholar.google.com/citations?user=NGizEIYAAAAJ&hl=zh-CN).
+{% assign sorted_publications = site.publications | sort: "date" | reverse %}
+{% assign publication_groups = "image_generation|Image Generation,multimodal_understanding|Multimodal Understanding" | split: "," %}
 
-<div class="profile-badges">
-  <a href="https://scholar.google.com/citations?user=NGizEIYAAAAJ&hl=zh-CN"><img src="https://img.shields.io/endpoint?url=https%3A%2F%2Fgoogle-scholar-badge.vercel.app%2Fcitations%3Fuser%3DNGizEIYAAAAJ&style=social" alt="Google Scholar citations"></a>
-</div>
+<p class="publications-intro">
+  Selected papers are grouped by research direction. Repository star badges update live when code is available.
+</p>
 
-{% if site.publication_category %}
-  {% for category in site.publication_category %}
-    {% assign title_shown = false %}
-    {% for post in site.publications reversed %}
-      {% if post.category != category[0] %}
-        {% continue %}
-      {% endif %}
-      {% unless title_shown %}
-        <h2>{{ category[1].title }}</h2><hr />
-        {% assign title_shown = true %}
-      {% endunless %}
-      {% include archive-single.html %}
-    {% endfor %}
+{% for group in publication_groups %}
+  {% assign group_parts = group | split: "|" %}
+  {% assign group_key = group_parts[0] %}
+  {% assign group_title = group_parts[1] %}
+  {% assign has_publications = false %}
+
+  {% for pub in sorted_publications %}
+    {% if pub.research_area == group_key %}
+      {% assign has_publications = true %}
+    {% endif %}
   {% endfor %}
-{% else %}
-  {% for post in site.publications reversed %}
-    {% include archive-single.html %}
-  {% endfor %}
-{% endif %}
+
+  {% if has_publications %}
+    <section class="publication-section" aria-labelledby="{{ group_key }}">
+      <h2 id="{{ group_key }}">{{ group_title }}</h2>
+      <div class="publication-card-list">
+        {% for pub in sorted_publications %}
+          {% if pub.research_area == group_key %}
+            {% include publication-card.html pub=pub %}
+          {% endif %}
+        {% endfor %}
+      </div>
+    </section>
+  {% endif %}
+{% endfor %}

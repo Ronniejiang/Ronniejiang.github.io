@@ -1,0 +1,65 @@
+{% assign pub = include.pub %}
+{% assign primary_link = pub.projecturl | default: pub.paperurl | default: pub.url %}
+
+<article class="publication-card">
+  <a class="publication-card__thumb" href="{{ primary_link }}">
+    {% if pub.thumbnail %}
+      <img src="{{ pub.thumbnail | relative_url }}" alt="{{ pub.title }} thumbnail">
+    {% else %}
+      <span>{{ pub.venue_label | default: pub.venue }}</span>
+    {% endif %}
+  </a>
+
+  <div class="publication-card__body">
+    <h3><a href="{{ pub.url | relative_url }}">{{ pub.title }}</a></h3>
+
+    {% if pub.authors %}
+      <p class="publication-card__authors">{{ pub.authors }}</p>
+    {% endif %}
+
+    <div class="publication-card__meta">
+      {% if pub.venue_label %}
+        <span class="publication-card__venue">{{ pub.venue_label }}</span>
+      {% elsif pub.venue %}
+        <span class="publication-card__venue">{{ pub.venue }}</span>
+      {% endif %}
+      {% if pub.status %}
+        <span class="publication-card__status">{{ pub.status }}</span>
+      {% endif %}
+    </div>
+
+    {% if pub.excerpt %}
+      <p class="publication-card__excerpt">{{ pub.excerpt }}</p>
+    {% endif %}
+
+    {% if pub.tags %}
+      <div class="publication-card__tags" aria-label="Publication tags">
+        {% for tag in pub.tags %}
+          <span>{{ tag }}</span>
+        {% endfor %}
+      </div>
+    {% endif %}
+
+    {% if pub.paperurl or pub.projecturl or pub.codeurl or pub.huggingfaceurl %}
+      <div class="publication-card__links">
+        {% if pub.projecturl %}
+          <a href="{{ pub.projecturl }}"><i class="fas fa-globe" aria-hidden="true"></i>Project</a>
+        {% endif %}
+        {% if pub.paperurl %}
+          <a href="{{ pub.paperurl }}"><i class="fas fa-file-pdf" aria-hidden="true"></i>PDF</a>
+        {% endif %}
+        {% if pub.codeurl %}
+          <a href="{{ pub.codeurl }}"><i class="fab fa-github" aria-hidden="true"></i>Code</a>
+        {% endif %}
+        {% if pub.huggingfaceurl %}
+          <a href="{{ pub.huggingfaceurl }}"><i class="fas fa-database" aria-hidden="true"></i>{{ pub.huggingfacelabel | default: "Hugging Face" }}</a>
+        {% endif %}
+        {% if pub.github_repo %}
+          <a class="publication-card__stars" href="{{ pub.codeurl }}" aria-label="GitHub stars for {{ pub.github_repo }}">
+            <img src="https://img.shields.io/github/stars/{{ pub.github_repo }}?style=social" alt="GitHub stars for {{ pub.github_repo }}">
+          </a>
+        {% endif %}
+      </div>
+    {% endif %}
+  </div>
+</article>

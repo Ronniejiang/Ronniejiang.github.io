@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 360" role="img" aria-label="DiTFuse visual abstract">
+  <rect width="640" height="360" fill="#f8fafc"/>
+  <rect x="28" y="28" width="156" height="132" rx="12" fill="#dbeafe" stroke="#93c5fd"/>
+  <rect x="28" y="200" width="156" height="132" rx="12" fill="#fee2e2" stroke="#fca5a5"/>
+  <rect x="456" y="92" width="156" height="176" rx="14" fill="#ecfdf5" stroke="#86efac"/>
+  <path d="M198 94h84M198 266h84M358 180h84" stroke="#2563eb" stroke-width="8" stroke-linecap="round"/>
+  <path d="M282 94c54 0 50 86 100 86M282 266c54 0 50-86 100-86" fill="none" stroke="#64748b" stroke-width="6"/>
+  <rect x="282" y="118" width="92" height="124" rx="14" fill="#111827"/>
+  <rect x="302" y="140" width="52" height="14" rx="7" fill="#60a5fa"/>
+  <rect x="302" y="174" width="52" height="14" rx="7" fill="#f59e0b"/>
+  <rect x="302" y="208" width="52" height="14" rx="7" fill="#34d399"/>
+  <circle cx="106" cy="94" r="38" fill="#60a5fa"/>
+  <circle cx="92" cy="254" r="38" fill="#f87171"/>
+  <path d="M510 150l42 62 28-44 20 54H490z" fill="#22c55e"/>
+  <text x="36" y="338" font-family="Arial, sans-serif" font-size="30" font-weight="700" fill="#0f172a">DiTFuse</text>
+  <text x="418" y="338" font-family="Arial, sans-serif" font-size="20" fill="#475569">semantic controllable fusion</text>
+</svg>

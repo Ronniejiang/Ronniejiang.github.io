@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 360" role="img" aria-label="EmbRACE-3K visual abstract">
+  <rect width="640" height="360" fill="#f8fafc"/>
+  <rect x="44" y="48" width="246" height="220" rx="14" fill="#fef3c7" stroke="#fcd34d"/>
+  <rect x="78" y="82" width="54" height="54" rx="8" fill="#ffffff" stroke="#f59e0b"/>
+  <rect x="160" y="82" width="54" height="54" rx="8" fill="#ffffff" stroke="#f59e0b"/>
+  <rect x="160" y="164" width="54" height="54" rx="8" fill="#ffffff" stroke="#f59e0b"/>
+  <path d="M105 136v54h55" fill="none" stroke="#111827" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="105" cy="190" r="14" fill="#2563eb"/>
+  <path d="M222 190l28-20v40z" fill="#ef4444"/>
+  <rect x="350" y="76" width="210" height="154" rx="16" fill="#111827"/>
+  <circle cx="410" cy="134" r="25" fill="#60a5fa"/>
+  <rect x="456" y="112" width="62" height="44" rx="10" fill="#34d399"/>
+  <path d="M392 188h132" stroke="#fbbf24" stroke-width="10" stroke-linecap="round"/>
+  <text x="36" y="338" font-family="Arial, sans-serif" font-size="30" font-weight="700" fill="#0f172a">EmbRACE-3K</text>
+  <text x="382" y="338" font-family="Arial, sans-serif" font-size="20" fill="#475569">embodied reasoning actions</text>
+</svg>

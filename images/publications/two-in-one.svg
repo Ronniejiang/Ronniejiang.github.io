@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 360" role="img" aria-label="Two in One visual abstract">
+  <rect width="640" height="360" fill="#f8fafc"/>
+  <rect x="38" y="54" width="176" height="226" rx="14" fill="#dbeafe" stroke="#93c5fd"/>
+  <path d="M58 252l58-78 44 52 28-38 18 64z" fill="#2563eb"/>
+  <g stroke="#0f172a" stroke-width="4" stroke-linecap="round" opacity="0.45">
+    <path d="M70 42l-22 72M116 38l-22 72M162 42l-22 72M208 42l-22 72"/>
+    <path d="M72 142l-22 72M118 138l-22 72M164 142l-22 72M210 142l-22 72"/>
+  </g>
+  <rect x="426" y="54" width="176" height="226" rx="14" fill="#ecfdf5" stroke="#86efac"/>
+  <path d="M446 252l58-78 44 52 28-38 18 64z" fill="#16a34a"/>
+  <circle cx="524" cy="118" r="32" fill="#f59e0b"/>
+  <rect x="266" y="116" width="108" height="108" rx="18" fill="#111827"/>
+  <path d="M292 170h56M320 142v56" stroke="#ffffff" stroke-width="9" stroke-linecap="round"/>
+  <path d="M224 168h40M376 168h40" stroke="#64748b" stroke-width="6" stroke-linecap="round"/>
+  <text x="36" y="338" font-family="Arial, sans-serif" font-size="30" font-weight="700" fill="#0f172a">Two in One</text>
+  <text x="405" y="338" font-family="Arial, sans-serif" font-size="20" fill="#475569">fusion plus deraining</text>
+</svg>

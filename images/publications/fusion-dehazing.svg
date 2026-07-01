@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 360" role="img" aria-label="Fusion meets dehazing visual abstract">
+  <rect width="640" height="360" fill="#f8fafc"/>
+  <rect x="34" y="56" width="248" height="214" rx="14" fill="#e5e7eb"/>
+  <path d="M58 240l70-88 48 54 38-42 44 76z" fill="#94a3b8"/>
+  <circle cx="208" cy="104" r="30" fill="#cbd5e1"/>
+  <rect x="34" y="56" width="248" height="214" rx="14" fill="#ffffff" opacity="0.48"/>
+  <rect x="358" y="56" width="248" height="214" rx="14" fill="#dbeafe" stroke="#93c5fd"/>
+  <path d="M382 240l70-88 48 54 38-42 44 76z" fill="#2563eb"/>
+  <circle cx="532" cy="104" r="30" fill="#fbbf24"/>
+  <path d="M294 164h50" stroke="#475569" stroke-width="8" stroke-linecap="round"/>
+  <path d="M328 140l22 24-22 24" fill="none" stroke="#475569" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="36" y="338" font-family="Arial, sans-serif" font-size="30" font-weight="700" fill="#0f172a">Fusion Meets Dehazing</text>
+  <text x="425" y="338" font-family="Arial, sans-serif" font-size="20" fill="#475569">haze robust fusion</text>
+</svg>

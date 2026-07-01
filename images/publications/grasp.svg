@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 360" role="img" aria-label="GRASP visual abstract">
+  <rect width="640" height="360" fill="#f8fafc"/>
+  <rect x="36" y="42" width="252" height="246" rx="14" fill="#dcfce7" stroke="#86efac"/>
+  <g stroke="#86efac" stroke-width="2">
+    <path d="M78 42v246M120 42v246M162 42v246M204 42v246M246 42v246"/>
+    <path d="M36 83h252M36 124h252M36 165h252M36 206h252M36 247h252"/>
+  </g>
+  <path d="M78 226l42-72 62 24 42-78 34 96-42 46-70-12-38 38z" fill="#22c55e" opacity="0.8"/>
+  <path d="M322 96h248" stroke="#cbd5e1" stroke-width="8" stroke-linecap="round"/>
+  <path d="M322 136h178" stroke="#cbd5e1" stroke-width="8" stroke-linecap="round"/>
+  <rect x="322" y="180" width="206" height="70" rx="14" fill="#111827"/>
+  <path d="M350 216h62M444 216h48" stroke="#60a5fa" stroke-width="10" stroke-linecap="round"/>
+  <circle cx="528" cy="216" r="15" fill="#f59e0b"/>
+  <text x="36" y="338" font-family="Arial, sans-serif" font-size="30" font-weight="700" fill="#0f172a">GRASP</text>
+  <text x="390" y="338" font-family="Arial, sans-serif" font-size="20" fill="#475569">geospatial pixel reasoning</text>
+</svg>
