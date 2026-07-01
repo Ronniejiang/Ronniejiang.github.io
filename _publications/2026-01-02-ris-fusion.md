@@ -21,7 +21,6 @@ tags:
   - Infrared-Visible Fusion
   - Referring Image Segmentation
   - Text-Driven Fusion
-  - MM-RIS Dataset
 citation: "Siju Ma, Changxiyu Gong, Xiaofeng Fan, Yong Ma, and Chengjie Jiang. RIS-FUSION: Rethinking Text-Driven Infrared and Visible Image Fusion From The Perspective of Referring Image Segmentation. ICASSP, 2026."
 excerpt: "A referring-image-segmentation perspective on text-driven infrared-visible image fusion, improving interpretability and downstream consistency."
 ---

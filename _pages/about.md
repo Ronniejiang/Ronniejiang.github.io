@@ -25,12 +25,17 @@ Education
 - **Tsinghua University**, M.S. in Computer Technology, 2025 - present
 - **Central University of Finance and Economics**, B.S. in Computer Science and Technology, 2021 - 2025
 
+Publications
+======
+
+{% include publication-list.html %}
+
+Internship
+======
+
+{% include internship-list.html %}
+
 Awards
 ======
 
 {% include awards-list.html %}
-
-Selected Publications
-======
-
-My recent work spans diffusion-based image fusion, referring text-driven fusion, geospatial pixel reasoning, ultra-high-resolution remote sensing VQA, and embodied reasoning benchmarks. See the [Publications](/publications/) page for papers, project pages, code, Hugging Face resources, and live GitHub star badges.

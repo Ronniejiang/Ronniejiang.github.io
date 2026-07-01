@@ -1,0 +1,28 @@
+{% assign sorted_publications = site.publications | sort: "display_order" %}
+{% assign publication_groups = "image_generation|Image Generation,multimodal_understanding|Multimodal Understanding" | split: "," %}
+
+{% for group in publication_groups %}
+  {% assign group_parts = group | split: "|" %}
+  {% assign group_key = group_parts[0] %}
+  {% assign group_title = group_parts[1] %}
+  {% assign has_publications = false %}
+
+  {% for pub in sorted_publications %}
+    {% if pub.research_area == group_key %}
+      {% assign has_publications = true %}
+    {% endif %}
+  {% endfor %}
+
+  {% if has_publications %}
+    <section class="publication-section" aria-labelledby="{{ group_key }}">
+      <h2 id="{{ group_key }}">{{ group_title }}</h2>
+      <div class="publication-card-list">
+        {% for pub in sorted_publications %}
+          {% if pub.research_area == group_key %}
+            {% include publication-card.html pub=pub %}
+          {% endif %}
+        {% endfor %}
+      </div>
+    </section>
+  {% endif %}
+{% endfor %}
