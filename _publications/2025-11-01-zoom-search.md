@@ -19,8 +19,7 @@ tags:
   - Remote Sensing VQA
   - Ultra-High Resolution
   - Training-Free
-  - Adaptive Zoom Search
-  - Code
+  - Plug-and-play
 citation: "Yunqi Zhou*, Chengjie Jiang*, Chun Yuan, and Jing Li. Look Where It Matters: Training-Free Ultra-HR Remote Sensing VQA via Adaptive Zoom Search. arXiv, 2025."
 excerpt: "A training-free pipeline for ultra-high-resolution remote sensing VQA that adaptively zooms into key regions, reducing token and memory cost while improving reasoning efficiency."
 ---
