@@ -48,6 +48,12 @@
   align-items: start;
 }
 
+.experience-item + .experience-item {
+  margin-top: 1.2rem;
+  padding-top: 1.2rem;
+  border-top: 1px solid #edf0f3;
+}
+
 .experience-dot {
   position: relative;
   z-index: 1;
