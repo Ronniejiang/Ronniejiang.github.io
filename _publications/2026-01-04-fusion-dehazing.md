@@ -10,7 +10,7 @@ venue: "TIP"
 neutral_label: "Under Review"
 status: "Under Review"
 authors: "Jing Li, Jiafeng Yan, <strong>Chengjie Jiang</strong>, Bin Yang, Yu Liu†"
-thumbnail: "/images/publications/fusion-dehazing.svg"
+thumbnail: "/images/publications/fusion-dehazing.png"
 tags:
   - Infrared-Visible Fusion
   - Image Dehazing

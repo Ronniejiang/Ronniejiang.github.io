@@ -16,7 +16,7 @@ codeurl: "https://github.com/SijuMa2003/RIS-FUSION"
 github_repo: "SijuMa2003/RIS-FUSION"
 huggingfaceurl: "https://huggingface.co/datasets/ronniejiangC/MM-RIS"
 huggingfacelabel: "Dataset"
-thumbnail: "/images/publications/ris-fusion.svg"
+thumbnail: "/images/publications/ris-fusion.png"
 tags:
   - Infrared-Visible Fusion
   - Referring Image Segmentation

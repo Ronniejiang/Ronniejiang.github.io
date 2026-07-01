@@ -14,7 +14,7 @@ paperurl: "https://arxiv.org/abs/2511.20460"
 projecturl: "https://kiki-zyq.github.io/Zoom-Search/"
 codeurl: "https://github.com/kiki-zyq/ZoomSearch"
 github_repo: "kiki-zyq/ZoomSearch"
-thumbnail: "/images/publications/zoom-search.svg"
+thumbnail: "/images/publications/zoom-search.png"
 tags:
   - Remote Sensing VQA
   - Ultra-High Resolution
