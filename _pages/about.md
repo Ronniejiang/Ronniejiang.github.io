@@ -33,6 +33,11 @@ Education
 - **Tsinghua University**, M.S. in Computer Technology, 2025 - present
 - **Central University of Finance and Economics**, B.S. in Computer Science and Technology, 2021 - 2025
 
+Awards
+======
+
+{% include awards-list.html %}
+
 Selected Publications
 ======
 
