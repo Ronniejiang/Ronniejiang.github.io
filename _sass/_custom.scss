@@ -11,19 +11,6 @@
   margin: 0 0.35em 0.4em 0;
 }
 
-.internship-logos {
-  display: flex;
-  align-items: center;
-  flex-wrap: wrap;
-  gap: 1rem;
-  margin: 1rem 0 1.25rem;
-}
-
-.internship-logos img {
-  max-height: 68px;
-  width: auto;
-}
-
 .cv-image {
   display: block;
   width: 100%;
@@ -31,4 +18,129 @@
   height: auto;
   margin: 0 auto;
   border: 1px solid #e5e7eb;
+}
+
+.experience-card {
+  position: relative;
+  margin: 0.75rem 0 1.5rem;
+  padding: 1.1rem 1.2rem;
+  border: 1px solid #e8eaee;
+  border-radius: 8px;
+  background: var(--global-bg-color);
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.04);
+}
+
+.experience-card::before {
+  content: "";
+  position: absolute;
+  top: 1.35rem;
+  bottom: 1.35rem;
+  left: 1.32rem;
+  width: 2px;
+  background: #9cc7ff;
+}
+
+.experience-item {
+  position: relative;
+  display: grid;
+  grid-template-columns: 16px minmax(92px, auto) 1fr;
+  gap: 1rem;
+  align-items: start;
+}
+
+.experience-dot {
+  position: relative;
+  z-index: 1;
+  width: 11px;
+  height: 11px;
+  margin-top: 1.05rem;
+  border-radius: 999px;
+  background: #0b66d8;
+}
+
+.experience-logo-group {
+  display: flex;
+  gap: 0.45rem;
+  flex-wrap: wrap;
+  padding-top: 0.25rem;
+}
+
+.experience-logo {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 46px;
+  height: 46px;
+  border: 1px solid #e3e6eb;
+  border-radius: 7px;
+  background: #fff;
+}
+
+.experience-logo img {
+  max-width: 36px;
+  max-height: 36px;
+}
+
+.experience-logo--wide img {
+  max-width: 40px;
+  max-height: 24px;
+}
+
+.experience-content h2 {
+  margin: 0 0 0.2rem;
+  font-size: 1.05rem;
+}
+
+.experience-content p {
+  margin: 0.08rem 0;
+}
+
+.experience-date,
+.experience-topic {
+  color: #6b7280;
+}
+
+.awards-list {
+  display: grid;
+  gap: 0.55rem;
+  margin: 0.75rem 0 1.5rem;
+}
+
+.award-item {
+  display: grid;
+  grid-template-columns: 1.45rem 1fr;
+  gap: 0.55rem;
+  align-items: start;
+}
+
+.award-icon {
+  color: #c89219;
+  line-height: 1.5;
+}
+
+.award-year {
+  color: #6b7280;
+  white-space: nowrap;
+}
+
+@media (max-width: 640px) {
+  .experience-card {
+    padding: 0.95rem;
+  }
+
+  .experience-card::before {
+    left: 1.07rem;
+  }
+
+  .experience-item {
+    grid-template-columns: 14px 1fr;
+  }
+
+  .experience-logo-group {
+    grid-column: 2;
+  }
+
+  .experience-content {
+    grid-column: 2;
+  }
 }

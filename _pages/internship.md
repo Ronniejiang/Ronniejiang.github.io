@@ -5,16 +5,18 @@ permalink: /internship/
 author_profile: true
 ---
 
-<div class="internship-logos">
-  <img src="/images/tencent-logo.png" alt="Tencent logo">
-  <img src="/images/lightspeed.jpeg" alt="LIGHTSPEED STUDIOS logo">
+<div class="experience-card">
+  <div class="experience-item">
+    <div class="experience-dot" aria-hidden="true"></div>
+    <div class="experience-logo-group">
+      <span class="experience-logo"><img src="/images/lightspeed.jpeg" alt="LIGHTSPEED STUDIOS logo"></span>
+      <span class="experience-logo experience-logo--wide"><img src="/images/tencent-logo.png" alt="Tencent logo"></span>
+    </div>
+    <div class="experience-content">
+      <h2>Tencent LIGHTSPEED STUDIOS</h2>
+      <p>Research Intern · Basic Research Group - Computer Vision and Multimodal Large Models · Mentor: <a href="https://scholar.google.com/citations?user=QNnWmasAAAAJ&hl=zh-CN">Shengju Qian</a></p>
+      <p class="experience-date">July 2024 - June 2025</p>
+      <p class="experience-topic">Efficient multimodal large model inference, visual reasoning for MLLMs, and embodied reasoning evaluation.</p>
+    </div>
+  </div>
 </div>
-
-Research Internship
-======
-
-- **Organization:** Tencent LIGHTSPEED STUDIOS
-- **Team:** Basic Research Group - Computer Vision and Multimodal Large Models
-- **Mentor:** [Shengju Qian](https://scholar.google.com/citations?user=QNnWmasAAAAJ&hl=zh-CN)
-- **Period:** July 2024 - June 2025
-- **Direction:** Efficient multimodal large model inference, visual reasoning for MLLMs, and embodied reasoning evaluation
