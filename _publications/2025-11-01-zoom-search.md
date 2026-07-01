@@ -3,6 +3,7 @@ title: "Look Where It Matters: Training-Free Ultra-HR Remote Sensing VQA via Ada
 collection: publications
 category: preprint
 research_area: multimodal_understanding
+display_order: 202
 permalink: /publication/zoom-search
 date: 2025-11-01
 venue: "arXiv"

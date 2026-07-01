@@ -3,10 +3,12 @@ title: "RIS-FUSION: Rethinking Text-Driven Infrared and Visible Image Fusion Fro
 collection: publications
 category: conference
 research_area: image_generation
+display_order: 102
 permalink: /publication/ris-fusion
 date: 2026-01-02
 venue: "ICASSP"
-venue_label: "ICASSP 2026 Oral"
+venue_label: "ICASSP 2026"
+highlight_label: "Oral"
 status: "Oral"
 authors: "Siju Ma, Changxiyu Gong, Xiaofeng Fan, Yong Ma, <strong>Chengjie Jiang†</strong>"
 paperurl: "https://ieeexplore.ieee.org/abstract/document/11460485"

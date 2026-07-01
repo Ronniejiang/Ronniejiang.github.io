@@ -110,7 +110,8 @@
 }
 
 .publication-card__venue,
-.publication-card__status {
+.publication-card__highlight,
+.publication-card__neutral {
   display: inline-flex;
   align-items: center;
   min-height: 1.55rem;
@@ -125,7 +126,12 @@
   background: #e7f0ff;
 }
 
-.publication-card__status {
+.publication-card__highlight {
+  color: #92400e;
+  background: #fef3c7;
+}
+
+.publication-card__neutral {
   color: #4b5563;
   background: #eef0f3;
 }

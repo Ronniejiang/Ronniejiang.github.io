@@ -7,7 +7,7 @@ author_profile: true
 
 {% include base_path %}
 
-{% assign sorted_publications = site.publications | sort: "date" | reverse %}
+{% assign sorted_publications = site.publications | sort: "display_order" %}
 {% assign publication_groups = "image_generation|Image Generation,multimodal_understanding|Multimodal Understanding" | split: "," %}
 
 <p class="publications-intro">

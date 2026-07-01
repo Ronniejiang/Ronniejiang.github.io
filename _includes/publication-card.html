@@ -23,8 +23,11 @@
       {% elsif pub.venue %}
         <span class="publication-card__venue">{{ pub.venue }}</span>
       {% endif %}
-      {% if pub.status %}
-        <span class="publication-card__status">{{ pub.status }}</span>
+      {% if pub.highlight_label %}
+        <span class="publication-card__highlight">{{ pub.highlight_label }}</span>
+      {% endif %}
+      {% if pub.neutral_label %}
+        <span class="publication-card__neutral">{{ pub.neutral_label }}</span>
       {% endif %}
     </div>
 
