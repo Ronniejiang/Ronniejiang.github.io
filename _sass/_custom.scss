@@ -59,9 +59,9 @@
 }
 
 .experience-logo-group {
-  display: flex;
+  display: grid;
   gap: 0.45rem;
-  flex-wrap: wrap;
+  justify-items: center;
   padding-top: 0.25rem;
 }
 
@@ -95,8 +95,7 @@
   margin: 0.08rem 0;
 }
 
-.experience-date,
-.experience-topic {
+.experience-date {
   color: #6b7280;
 }
 
@@ -114,8 +113,8 @@
 }
 
 .award-icon {
-  color: #c89219;
-  line-height: 1.5;
+  line-height: 1.45;
+  filter: drop-shadow(0 1px 1px rgba(164, 111, 0, 0.2));
 }
 
 .award-year {

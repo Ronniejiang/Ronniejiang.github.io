@@ -14,9 +14,8 @@ author_profile: true
     </div>
     <div class="experience-content">
       <h2>Tencent LIGHTSPEED STUDIOS</h2>
-      <p>Research Intern · Basic Research Group - Computer Vision and Multimodal Large Models · Mentor: <a href="https://scholar.google.com/citations?user=QNnWmasAAAAJ&hl=zh-CN">Shengju Qian</a></p>
+      <p>Research Intern · Topic: Multimodal Large Language Models · Mentor: <a href="https://scholar.google.com/citations?user=QNnWmasAAAAJ&hl=zh-CN">Shengju Qian</a>.</p>
       <p class="experience-date">July 2024 - June 2025</p>
-      <p class="experience-topic">Efficient multimodal large model inference, visual reasoning for MLLMs, and embodied reasoning evaluation.</p>
     </div>
   </div>
 </div>
