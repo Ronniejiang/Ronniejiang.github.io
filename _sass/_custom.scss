@@ -1,0 +1,25 @@
+.profile-badges {
+  margin: 0 0 1em;
+}
+
+.profile-badges img,
+.publication__badge {
+  vertical-align: middle;
+}
+
+.publication__links .btn {
+  margin: 0 0.35em 0.4em 0;
+}
+
+.internship-logos {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin: 1rem 0 1.25rem;
+}
+
+.internship-logos img {
+  max-height: 68px;
+  width: auto;
+}
