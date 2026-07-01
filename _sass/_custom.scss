@@ -141,7 +141,16 @@
   margin: 0 0 0.62rem;
 }
 
-.publication-card__tags span {
+.publication-card__chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.28rem;
+  align-items: center;
+  margin: 0 0 0.62rem;
+}
+
+.publication-card__tags span,
+.publication-card__tag {
   display: inline-flex;
   align-items: center;
   min-height: 1.2rem;

@@ -19,7 +19,7 @@
 <div class="publication-card-list">
 {% for pub in sorted_publications %}
 {% if pub.research_area == group_key %}
-{% include publication-card.html pub=pub %}
+{% include publication-card.html pub=pub compact=include.compact %}
 {% endif %}
 {% endfor %}
 </div>

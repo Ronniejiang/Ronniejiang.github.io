@@ -29,7 +29,7 @@ Publications
 ======
 
 <div class="home-publications">
-{% include publication-list.html %}
+{% include publication-list.html compact=true %}
 </div>
 
 Internship

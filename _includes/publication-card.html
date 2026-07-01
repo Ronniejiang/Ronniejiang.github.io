@@ -1,7 +1,8 @@
 {% assign pub = include.pub %}
 {% assign primary_link = pub.projecturl | default: pub.paperurl | default: pub.url %}
+{% assign compact = include.compact %}
 
-<article class="publication-card">
+<article class="publication-card{% if compact %} publication-card--compact{% endif %}">
   <a class="publication-card__thumb" href="{{ primary_link }}">
     {% if pub.thumbnail %}
       <img src="{{ pub.thumbnail | relative_url }}" alt="{{ pub.title }} thumbnail">
@@ -17,32 +18,55 @@
       <p class="publication-card__authors">{{ pub.authors }}</p>
     {% endif %}
 
-    <div class="publication-card__meta">
-      {% unless pub.hide_venue_badge %}
-        {% if pub.venue_label %}
-          <span class="publication-card__venue">{{ pub.venue_label }}</span>
-        {% elsif pub.venue %}
-          <span class="publication-card__venue">{{ pub.venue }}</span>
+    {% if compact %}
+      <div class="publication-card__chips" aria-label="Publication tags">
+        {% unless pub.hide_venue_badge %}
+          {% if pub.venue_label %}
+            <span class="publication-card__venue">{{ pub.venue_label }}</span>
+          {% elsif pub.venue %}
+            <span class="publication-card__venue">{{ pub.venue }}</span>
+          {% endif %}
+        {% endunless %}
+        {% if pub.highlight_label %}
+          <span class="publication-card__highlight">{{ pub.highlight_label }}</span>
         {% endif %}
-      {% endunless %}
-      {% if pub.highlight_label %}
-        <span class="publication-card__highlight">{{ pub.highlight_label }}</span>
-      {% endif %}
-      {% if pub.neutral_label %}
-        <span class="publication-card__neutral">{{ pub.neutral_label }}</span>
-      {% endif %}
-    </div>
-
-    {% if pub.excerpt %}
-      <p class="publication-card__excerpt">{{ pub.excerpt }}</p>
-    {% endif %}
-
-    {% if pub.tags %}
-      <div class="publication-card__tags" aria-label="Publication tags">
-        {% for tag in pub.tags %}
-          <span>{{ tag }}</span>
-        {% endfor %}
+        {% if pub.neutral_label %}
+          <span class="publication-card__neutral">{{ pub.neutral_label }}</span>
+        {% endif %}
+        {% if pub.tags %}
+          {% for tag in pub.tags %}
+            <span class="publication-card__tag">{{ tag }}</span>
+          {% endfor %}
+        {% endif %}
       </div>
+    {% else %}
+      <div class="publication-card__meta">
+        {% unless pub.hide_venue_badge %}
+          {% if pub.venue_label %}
+            <span class="publication-card__venue">{{ pub.venue_label }}</span>
+          {% elsif pub.venue %}
+            <span class="publication-card__venue">{{ pub.venue }}</span>
+          {% endif %}
+        {% endunless %}
+        {% if pub.highlight_label %}
+          <span class="publication-card__highlight">{{ pub.highlight_label }}</span>
+        {% endif %}
+        {% if pub.neutral_label %}
+          <span class="publication-card__neutral">{{ pub.neutral_label }}</span>
+        {% endif %}
+      </div>
+
+      {% if pub.excerpt %}
+        <p class="publication-card__excerpt">{{ pub.excerpt }}</p>
+      {% endif %}
+
+      {% if pub.tags %}
+        <div class="publication-card__tags" aria-label="Publication tags">
+          {% for tag in pub.tags %}
+            <span>{{ tag }}</span>
+          {% endfor %}
+        </div>
+      {% endif %}
     {% endif %}
 
     {% if pub.paperurl or pub.projecturl or pub.codeurl or pub.huggingfaceurl %}
