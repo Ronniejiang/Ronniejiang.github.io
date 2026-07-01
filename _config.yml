@@ -24,12 +24,12 @@ repository               : "Ronniejiang/Ronniejiang.github.io"
 author:
   # Biographic information
   avatar           : "chengjie-jiang.jpeg"
-  name             : "Chengjie Jiang"
+  name             : "Chengjie Jiang（蒋铖杰）"
   pronouns         : # example: "she/her"  
   bio              : "Master's student at Tsinghua University"
-  location         : "Beijing, China"
+  location         : "Shenzhen, China"
   employer         : "CVML Lab, Tsinghua University"
-  uri              : https://ronniejiang.github.io
+  uri              :
   email            : "jiangcj25@mails.tsinghua.edu.cn"
 
   # Academic websites
