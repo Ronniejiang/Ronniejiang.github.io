@@ -28,7 +28,9 @@ Education
 Publications
 ======
 
+<div class="home-publications">
 {% include publication-list.html %}
+</div>
 
 Internship
 ======
