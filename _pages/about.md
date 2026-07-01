@@ -1,15 +1,15 @@
 ---
 permalink: /
-title: "Chengjie Jiang"
+title: "About Me"
 author_profile: true
 redirect_from:
   - /about/
   - /about.html
 ---
 
-I am a Master's student at Tsinghua University and a member of the CVML Lab, advised by [Prof. Chun Yuan](https://scholar.google.com/citations?user=fYdxi2sAAAAJ&hl=zh-CN). My research focuses on multimodal large models, controllable video generation and world models, image fusion, and remote sensing.
+I am a second-year Master's student at Tsinghua University and a member of the CVML Lab, advised by [Prof. Chun Yuan](https://scholar.google.com/citations?user=fYdxi2sAAAAJ&hl=zh-CN).
 
-Before joining Tsinghua, I received my B.S. in Computer Science and Technology from the Central University of Finance and Economics. I also worked as a research intern at Tencent LIGHTSPEED STUDIOS with [Shengju Qian](https://scholar.google.com/citations?user=QNnWmasAAAAJ&hl=zh-CN), focusing on efficient multimodal reasoning and embodied evaluation.
+Before joining Tsinghua, I received my B.S. in Computer Science and Technology from the Central University of Finance and Economics in 2025. My recent research focuses on training better foundation multimodal large language models.
 
 <div class="profile-badges">
   <a href="https://scholar.google.com/citations?user=NGizEIYAAAAJ&hl=zh-CN"><img src="https://img.shields.io/endpoint?url=https%3A%2F%2Fgoogle-scholar-badge.vercel.app%2Fcitations%3Fuser%3DNGizEIYAAAAJ&style=social" alt="Google Scholar citations"></a>
@@ -22,9 +22,9 @@ Before joining Tsinghua, I received my B.S. in Computer Science and Technology f
 Research Interests
 ======
 
-- Multimodal large models and efficient inference
+- Multimodal large language models
 - Controllable video generation and world models
-- Infrared-visible image fusion and multimodal perception
+- Multimodal Image Fusion
 - Remote sensing understanding and reasoning
 
 Education
