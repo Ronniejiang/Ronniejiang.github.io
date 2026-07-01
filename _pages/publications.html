@@ -10,10 +10,6 @@ author_profile: true
 {% assign sorted_publications = site.publications | sort: "display_order" %}
 {% assign publication_groups = "image_generation|Image Generation,multimodal_understanding|Multimodal Understanding" | split: "," %}
 
-<p class="publications-intro">
-  Selected papers are grouped by research direction. Repository star badges update live when code is available.
-</p>
-
 {% for group in publication_groups %}
   {% assign group_parts = group | split: "|" %}
   {% assign group_key = group_parts[0] %}

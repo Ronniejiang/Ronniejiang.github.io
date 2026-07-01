@@ -60,8 +60,9 @@
           <a href="{{ pub.huggingfaceurl }}"><i class="fas fa-database" aria-hidden="true"></i>{{ pub.huggingfacelabel | default: "Hugging Face" }}</a>
         {% endif %}
         {% if pub.github_repo %}
+          {% assign encoded_repo = pub.github_repo | replace: "/", "%2F" %}
           <a class="publication-card__stars" href="{{ pub.codeurl }}" aria-label="GitHub stars for {{ pub.github_repo }}">
-            <img src="https://img.shields.io/github/stars/{{ pub.github_repo }}?style=social" alt="GitHub stars for {{ pub.github_repo }}">
+            <img src="https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fapi.github.com%2Frepos%2F{{ encoded_repo }}&query=%24.stargazers_count&label=Stars&logo=github&style=social" alt="GitHub stars for {{ pub.github_repo }}">
           </a>
         {% endif %}
       </div>

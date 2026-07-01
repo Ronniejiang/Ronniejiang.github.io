@@ -7,7 +7,8 @@
     {% if pub.codeurl %}<a class="btn btn--small" href="{{ pub.codeurl }}">Code</a>{% endif %}
     {% if pub.huggingfaceurl %}<a class="btn btn--small" href="{{ pub.huggingfaceurl }}">{{ pub.huggingfacelabel | default: "Hugging Face" }}</a>{% endif %}
     {% if pub.github_repo %}
-      <a href="{{ pub.codeurl }}" aria-label="GitHub stars for {{ pub.github_repo }}"><img class="publication__badge" src="https://img.shields.io/github/stars/{{ pub.github_repo }}?style=social" alt="GitHub stars for {{ pub.github_repo }}"></a>
+      {% assign encoded_repo = pub.github_repo | replace: "/", "%2F" %}
+      <a href="{{ pub.codeurl }}" aria-label="GitHub stars for {{ pub.github_repo }}"><img class="publication__badge" src="https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fapi.github.com%2Frepos%2F{{ encoded_repo }}&query=%24.stargazers_count&label=Stars&logo=github&style=social" alt="GitHub stars for {{ pub.github_repo }}"></a>
     {% endif %}
   </p>
 {% endif %}
