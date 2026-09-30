@@ -7,9 +7,7 @@ redirect_from:
   - /about.html
 ---
 
-I am a second-year Master's student at Tsinghua University and a member of the CVML Lab, advised by [Prof. Chun Yuan](https://scholar.google.com/citations?user=fYdxi2sAAAAJ&hl=zh-CN).
-
-Before joining Tsinghua, I received my B.S. in Computer Science and Technology from the Central University of Finance and Economics in 2025. My recent research focuses on training better foundation multimodal large language models.
+I am a second-year Master's student at Tsinghua University and a member of the CVML Lab, advised by [Prof. Chun Yuan](https://scholar.google.com/citations?user=fYdxi2sAAAAJ&hl=zh-CN). Before joining Tsinghua, I received my B.S. in Computer Science and Technology from the Central University of Finance and Economics in 2025. My recent research focuses on training better foundation multimodal large language models.
 
 Research Interests
 ======
