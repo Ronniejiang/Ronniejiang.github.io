@@ -1,5 +1,5 @@
 {% assign sorted_publications = site.publications | sort: "display_order" %}
-{% assign publication_groups = "image_generation|Image Generation,multimodal_understanding|Multimodal Understanding" | split: "," %}
+{% assign publication_groups = "multimodal_understanding|Multimodal Understanding,image_generation|Image Generation" | split: "," %}
 
 {% for group in publication_groups %}
 {% assign group_parts = group | split: "|" %}
