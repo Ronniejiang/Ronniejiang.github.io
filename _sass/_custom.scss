@@ -1,3 +1,66 @@
+:root {
+  --academic-title-color: #1d1d1f;
+  --academic-muted-color: #6e6e73;
+  --academic-accent-color: #0066cc;
+  --academic-accent-hover: #004499;
+  --academic-accent-soft: rgba(0, 102, 204, 0.1);
+  --academic-card-border: rgba(0, 0, 0, 0.08);
+  --academic-card-border-hover: rgba(0, 102, 204, 0.3);
+  --academic-card-shadow: 0 1px 4px rgba(15, 23, 42, 0.06);
+  --academic-card-shadow-hover: 0 12px 30px rgba(15, 23, 42, 0.14);
+  --academic-control-bg: #ebedf0;
+  --academic-control-text: #343a40;
+  --academic-surface-subtle: #fafbfc;
+  --academic-divider-color: #e5e7eb;
+  --academic-timeline-dot: #4b5563;
+  --academic-neutral-bg: #eef0f3;
+  --academic-neutral-text: #4b5563;
+  --global-link-color: var(--academic-accent-color);
+  --global-link-color-hover: var(--academic-accent-hover);
+  --global-link-color-visited: var(--academic-accent-color);
+  --global-masthead-link-color-hover: var(--academic-accent-color);
+}
+
+html[data-theme="dark"] {
+  --academic-title-color: #f5f5f7;
+  --academic-muted-color: #d1d1d6;
+  --academic-accent-color: #66b3ff;
+  --academic-accent-hover: #8fc7ff;
+  --academic-accent-soft: rgba(102, 179, 255, 0.16);
+  --academic-card-border: rgba(255, 255, 255, 0.16);
+  --academic-card-border-hover: rgba(102, 179, 255, 0.52);
+  --academic-card-shadow: 0 1px 5px rgba(0, 0, 0, 0.18);
+  --academic-card-shadow-hover: 0 12px 30px rgba(0, 0, 0, 0.38);
+  --academic-control-bg: rgba(255, 255, 255, 0.11);
+  --academic-control-text: #f5f5f7;
+  --academic-surface-subtle: rgba(255, 255, 255, 0.08);
+  --academic-divider-color: rgba(255, 255, 255, 0.17);
+  --academic-timeline-dot: #9ca3af;
+  --academic-neutral-bg: rgba(255, 255, 255, 0.12);
+  --academic-neutral-text: #e5e7eb;
+  --global-link-color: var(--academic-accent-color);
+  --global-link-color-hover: var(--academic-accent-hover);
+  --global-link-color-visited: var(--academic-accent-color);
+  --global-masthead-link-color-hover: var(--academic-accent-color);
+}
+
+.page__title,
+.page__content > h1,
+.page__content > h2,
+.experience-content h2 {
+  color: var(--academic-title-color);
+}
+
+.publication-section h2 {
+  color: var(--academic-muted-color);
+}
+
+.masthead__menu-item.selected a,
+.masthead__menu-item.selected a:hover {
+  color: var(--academic-accent-color);
+  border-bottom-color: var(--academic-accent-color);
+}
+
 .publication__badge {
   vertical-align: middle;
 }
@@ -33,10 +96,13 @@
   gap: 0.9rem;
   align-items: start;
   padding: 0.8rem;
-  border: 1px solid #e7eaee;
+  border: 1px solid var(--academic-card-border);
   border-radius: 8px;
   background: var(--global-bg-color);
-  box-shadow: 0 1px 8px rgba(15, 23, 42, 0.06);
+  box-shadow: var(--academic-card-shadow);
+  transition: transform 0.3s cubic-bezier(0.25, 0.8, 0.25, 1),
+              box-shadow 0.3s cubic-bezier(0.25, 0.8, 0.25, 1),
+              border-color 0.2s ease;
 }
 
 .publication-card__thumb {
@@ -44,9 +110,9 @@
   overflow: hidden;
   width: 100%;
   aspect-ratio: 16 / 9;
-  border: 1px solid #d7dce2;
+  border: 1px solid var(--academic-card-border);
   border-radius: 7px;
-  background: #f7f8fa;
+  background: var(--academic-surface-subtle);
 }
 
 .publication-card__thumb img {
@@ -54,6 +120,7 @@
   height: 100%;
   object-fit: fill;
   background: #fff;
+  transition: transform 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
 }
 
 .publication-card__thumb span {
@@ -61,7 +128,7 @@
   height: 100%;
   place-items: center;
   padding: 0.8rem;
-  color: #6b7280;
+  color: var(--academic-muted-color);
   font-size: 0.78rem;
   text-align: center;
 }
@@ -73,8 +140,9 @@
 }
 
 .publication-card__body h3 a {
-  color: var(--global-text-color);
+  color: var(--academic-title-color);
   text-decoration: none;
+  transition: color 0.2s ease;
 }
 
 .publication-card__body h3 a:hover {
@@ -83,13 +151,13 @@
 
 .publication-card__authors {
   margin: 0 0 0.38rem;
-  color: #6b7280;
+  color: var(--academic-muted-color);
   font-size: 0.72rem;
   line-height: 1.35;
 }
 
 .publication-card__authors strong {
-  color: var(--global-text-color);
+  color: var(--academic-title-color);
 }
 
 .publication-card__meta {
@@ -123,13 +191,13 @@
 }
 
 .publication-card__neutral {
-  color: #4b5563;
-  background: #eef0f3;
+  color: var(--academic-neutral-text);
+  background: var(--academic-neutral-bg);
 }
 
 .publication-card__excerpt {
   margin: 0 0 0.55rem;
-  color: #6b7280;
+  color: var(--academic-muted-color);
   font-size: 0.68rem;
   line-height: 1.4;
 }
@@ -155,10 +223,10 @@
   align-items: center;
   min-height: 1.2rem;
   padding: 0.08rem 0.36rem;
-  border: 1px solid #e1e5eb;
+  border: 1px solid var(--academic-card-border);
   border-radius: 999px;
-  color: #4b5563;
-  background: #fafbfc;
+  color: var(--academic-neutral-text);
+  background: var(--academic-surface-subtle);
   font-size: 0.56rem;
   font-weight: 600;
 }
@@ -177,16 +245,17 @@
   min-height: 1.35rem;
   padding: 0.12rem 0.46rem;
   border-radius: 999px;
-  color: #343a40;
-  background: #ebedf0;
+  color: var(--academic-control-text);
+  background: var(--academic-control-bg);
   font-size: 0.6rem;
   font-weight: 700;
   text-decoration: none;
+  transition: transform 0.2s ease, color 0.2s ease, background-color 0.2s ease;
 }
 
 .publication-card__links a:hover {
-  color: #0b66d8;
-  background: #e0ebff;
+  color: var(--academic-accent-color);
+  background: var(--academic-accent-soft);
 }
 
 .publication-card__stars {
@@ -220,17 +289,20 @@
   max-width: 980px;
   height: auto;
   margin: 0 auto;
-  border: 1px solid #e5e7eb;
+  border: 1px solid var(--academic-divider-color);
 }
 
 .experience-card {
   position: relative;
   margin: 0.75rem 0 1.5rem;
   padding: 1.1rem 1.2rem;
-  border: 1px solid #e8eaee;
+  border: 1px solid var(--academic-card-border);
   border-radius: 8px;
   background: var(--global-bg-color);
-  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.04);
+  box-shadow: var(--academic-card-shadow);
+  transition: transform 0.3s cubic-bezier(0.25, 0.8, 0.25, 1),
+              box-shadow 0.3s cubic-bezier(0.25, 0.8, 0.25, 1),
+              border-color 0.2s ease;
 }
 
 .experience-card::before {
@@ -240,7 +312,7 @@
   bottom: 1.35rem;
   left: calc(1.2rem + 4.5px);
   width: 2px;
-  background: #d9dde3;
+  background: var(--academic-divider-color);
 }
 
 .experience-item {
@@ -254,7 +326,7 @@
 .experience-item + .experience-item {
   margin-top: 1.2rem;
   padding-top: 1.2rem;
-  border-top: 1px solid #edf0f3;
+  border-top: 1px solid var(--academic-divider-color);
 }
 
 .experience-dot {
@@ -264,7 +336,7 @@
   height: 11px;
   margin-top: 1.05rem;
   border-radius: 999px;
-  background: #4b5563;
+  background: var(--academic-timeline-dot);
 }
 
 .experience-logo-group {
@@ -288,6 +360,7 @@
 .experience-logo img {
   max-width: 36px;
   max-height: 36px;
+  transition: transform 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
 }
 
 .experience-logo--wide img {
@@ -305,7 +378,7 @@
 }
 
 .experience-date {
-  color: #6b7280;
+  color: var(--academic-muted-color);
 }
 
 .awards-list {
@@ -327,8 +400,56 @@
 }
 
 .award-year {
-  color: #6b7280;
+  color: var(--academic-muted-color);
   white-space: nowrap;
+}
+
+.publication-card a:focus-visible,
+.experience-card a:focus-visible,
+.masthead a:focus-visible {
+  outline: 2px solid var(--academic-accent-color);
+  outline-offset: 3px;
+  border-radius: 4px;
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .publication-card:hover,
+  .experience-card:hover {
+    transform: translateY(-2px);
+    border-color: var(--academic-card-border-hover);
+    box-shadow: var(--academic-card-shadow-hover);
+  }
+
+  .publication-card:hover .publication-card__thumb img {
+    transform: scale(1.02);
+  }
+
+  .publication-card__links a:hover {
+    transform: translateY(-1px);
+  }
+
+  .experience-card:hover .experience-logo img {
+    transform: scale(1.04);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .publication-card,
+  .publication-card__thumb img,
+  .publication-card__body h3 a,
+  .publication-card__links a,
+  .experience-card,
+  .experience-logo img {
+    transition: none;
+  }
+
+  .publication-card:hover,
+  .experience-card:hover,
+  .publication-card__links a:hover,
+  .publication-card:hover .publication-card__thumb img,
+  .experience-card:hover .experience-logo img {
+    transform: none;
+  }
 }
 
 @media (max-width: 640px) {
