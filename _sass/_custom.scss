@@ -238,9 +238,9 @@
   position: absolute;
   top: 1.35rem;
   bottom: 1.35rem;
-  left: 1.32rem;
+  left: calc(1.2rem + 4.5px);
   width: 2px;
-  background: #9cc7ff;
+  background: #d9dde3;
 }
 
 .experience-item {
@@ -264,7 +264,7 @@
   height: 11px;
   margin-top: 1.05rem;
   border-radius: 999px;
-  background: #0b66d8;
+  background: #4b5563;
 }
 
 .experience-logo-group {
@@ -347,7 +347,7 @@
   }
 
   .experience-card::before {
-    left: 1.07rem;
+    left: calc(0.95rem + 4.5px);
   }
 
   .experience-item {
