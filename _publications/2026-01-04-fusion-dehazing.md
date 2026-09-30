@@ -7,6 +7,7 @@ display_order: 104
 permalink: /publication/fusion-meets-dehazing
 date: 2026-01-04
 venue: "TIP"
+hide_venue_badge: true
 neutral_label: "Under Review"
 status: "Under Review"
 authors: "Jing Li, Jiafeng Yan, <strong>Chengjie Jiang</strong>, Bin Yang, Yu Liu†"
