@@ -189,11 +189,13 @@ body {
 .publication-card-list {
   display: grid;
   gap: 1rem;
+  width: 100%;
+  max-width: 900px;
 }
 
 .publication-card {
   display: grid;
-  grid-template-columns: minmax(360px, 48%) minmax(0, 1fr);
+  grid-template-columns: minmax(320px, 42%) minmax(0, 1fr);
   gap: 1.05rem;
   align-items: start;
   padding: 0.9rem;
@@ -380,7 +382,7 @@ body {
 
 .home-publications .publication-card__thumb {
   float: left;
-  width: min(52%, 420px);
+  width: min(42%, 360px);
   margin: 0 0.95rem 0.55rem 0;
 }
 
