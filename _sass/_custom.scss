@@ -421,7 +421,7 @@ body {
 .experience-item {
   position: relative;
   display: grid;
-  grid-template-columns: 16px minmax(92px, auto) 1fr;
+  grid-template-columns: 16px 112px minmax(0, 1fr);
   gap: 1rem;
   align-items: start;
 }
@@ -453,22 +453,22 @@ body {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  width: 46px;
-  height: 46px;
+  width: 100px;
+  height: 64px;
   border: 1px solid #e3e6eb;
   border-radius: 7px;
   background: #fff;
 }
 
 .experience-logo img {
-  max-width: 36px;
-  max-height: 36px;
+  max-width: 88px;
+  max-height: 52px;
   transition: transform 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
 }
 
 .experience-logo--wide img {
-  max-width: 40px;
-  max-height: 24px;
+  max-width: 88px;
+  max-height: 48px;
 }
 
 .experience-content h2 {
